@@ -29,9 +29,12 @@ gem 'jquery-rails'
 
 gem 'execjs'
 gem 'therubyracer'
-gem 'pg'
 
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+end
+
+group :production do
+ gem 'pg'
 end
